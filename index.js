@@ -1,4 +1,4 @@
-function orderPizza() {
+async function orderPizza() {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve("the pizza arrived");
@@ -16,7 +16,7 @@ async function eatPizza() {
 }
 //eatPizza();
 
-function downloadFile() {
+async function downloadFile() {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve("the file is being downloaded");
@@ -34,7 +34,7 @@ async function useFile() {
 }
 //useFile()
 
-function playMovie() {
+async function playMovie() {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve("the movie started playing");
@@ -51,7 +51,7 @@ async function loadingMovie() {
 }
 //loadingMovie();
 
-function countdownTimer() {
+async function countdownTimer() {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve("five seconds have passed");
@@ -59,3 +59,5 @@ function countdownTimer() {
   });
 }
 //countdownTimer().then((msg)=>console.log(msg))
+
+
